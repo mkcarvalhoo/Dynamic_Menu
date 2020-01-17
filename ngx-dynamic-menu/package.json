@@ -1,0 +1,39 @@
+{
+  "name": "experimento-menu-dinamico",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@angular-devkit/core": "^8.3.23",
+    "@angular-devkit/schematics": "^8.3.23",
+    "@angular/common": "8.2.14",
+    "@angular/compiler": "8.2.14",
+    "@angular/core": "8.2.14",
+    "@angular/http": "7.2.16",
+    "@angular/platform-browser": "8.2.14",
+    "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/router": "8.2.14",
+    "@angular/router-deprecated": "2.0.0-rc.2",
+    "@angular/upgrade": "8.2.14",
+    "angular2-in-memory-web-api": "0.0.21",
+    "bootstrap": "^4.4.1",
+    "core-js": "^3.6.4",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "6.5.4",
+    "systemjs": "6.1.9",
+    "zone.js": "^0.10.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "lite-server": "^2.2.0",
+    "typescript": "^3.7.5",
+    "typings": "^2.1.1"
+  }
+}
